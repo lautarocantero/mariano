@@ -1,0 +1,172 @@
+:root {
+     --color1: rgba(99, 148, 250); 
+    /* --color1: rgb(109, 57, 118); */
+    /* --color1: rgb(78, 147, 111); */
+    /* --color1: rgb(244, 148, 1, 1); */
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color1);
+    font-weight: 300;
+    text-align: center;
+    
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.columnas {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     height: 100vh;
+     background-color: var(--color1);
+}
+
+
+/*---------PRIMERA COLUMNA------*/
+.primera-columna {
+  overflow: hidden;
+  position: relative;
+}
+
+.primera-columna {
+  background-image: url(../img/login5.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.contenido-primera-columna {
+  position: absolute;
+  background-color: rgba(99, 148, 250, .5); 
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+/*---------SEGUNDA COLUMNA--------*/
+.login {
+  background-color: #fff;
+}
+
+.contenedor-login {
+  background-color: #fff;
+  height: 90%; 
+  padding-top: 20px;
+}
+
+.contenedor-login .imagen {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-login .imagen img {
+    padding: 20px 5px;
+    width: 50%;
+    text-align: center;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.campo input {
+  border: none;
+  border-bottom: 1px solid var(--color1);
+  padding: 10px 2px;
+}
+
+.icono {
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  color: var(--color1);
+  font-size: 19px;
+}
+
+input:focus, input.form-control:focus {
+
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+::placeholder { color: var(--color1); }
+:-ms-input-placeholder { color: var(--color1); } /* IE 10+ */
+::-webkit-input-placeholder { color: var(--color1); } /* WebKit */
+::-moz-placeholder { color: var(--color1); } /* Firefox 19+ */
+
+
+.btn-login {
+  color: #fff;
+  background-color: var(--color1);
+  padding: 15px 25px;
+  margin-top: 25px;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.acciones {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--color1);
+  margin-bottom: 40px;
+}
+
+.acciones p {
+  margin: 0;
+}
+/* .nuevo-usuario, .restaurar-contraseña{
+  color: var(--color1);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.nuevo-usuario, .restaurar-contraseña:hover {
+  cursor: pointer;
+} */
+
+.info-extra {
+  display: flex;
+  flex-direction: column;
+  color: var(--color1);
+  align-items: center;
+  text-align: center;
+}
+.info-extra .texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-extra .texto i {
+  margin-right: 10px;
+}
+
+.leyenda p {
+  margin-top: 0;
+}

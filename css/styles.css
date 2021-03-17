@@ -1,0 +1,163 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffff;
+    
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contenido{
+    display: flex;
+    height: 100%;
+    
+}
+
+.contenido h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top: 5px;
+    
+}
+
+.header {
+      height: 200px;
+      background-image: url(../img/fondo2.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-top: 0px;   
+}
+
+.info {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.barra {
+    /* background-color: #6394FA; */
+    /* background-color: #6d3976; */
+    /* background-color: rgb(78, 147, 111); */
+    background-color: rgb(246, 168, 0);
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+/*---------PRIMER MODELO---------------*/
+/* .tramites {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+
+@media(min-width:768px){
+    .tramites {
+        grid-template-columns: repeat(4, 200px);
+        gap: 20px;
+    }
+}
+
+.tramite {
+    background-image: url(../img/fondo-card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 275px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e1e1e1;
+    border-radius: 12px;
+}
+
+.tramite:hover {
+    padding: 2px;
+    border: 1px solid #6394FA;
+    border: 1px solid #6d3976; 
+    border: 1px solid rgb(78, 147, 111) ;
+    border: 1px solid rgb(246, 168, 0);
+    -webkit-box-shadow: 2px 4px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 5px -1px rgba(0,0,0,0.75);
+}
+
+.tramite p {
+    text-align: center;
+}
+
+.nombre-tramite {
+    color: #6d3976; 
+    color: rgb(78, 147, 111); 
+    color: rgb(246, 168, 0);
+}
+
+.tramite .accion-tramite {
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 1.5;
+} */
+
+/*-------------SEGUNDO MODELO----------->*/
+.tramites {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tramite {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    background-image: url(../img/fondo-card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+
+.tramite:hover {
+    border: 1px solid rgb(246, 168, 0);
+    -webkit-box-shadow: 2px 4px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 5px -1px rgba(0,0,0,0.75);
+}
+
+.nombre-tramite {
+    color: rgb(246, 168, 0);
+}
+
+.boton-descarga {
+    padding: 5px 10px;
+    background-color: rgb(246, 168, 0);
+    color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 4px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 5px -1px rgba(0,0,0,0.75);
+}
+
+.boton-descarga:hover{
+    
+    cursor: pointer;
+}
